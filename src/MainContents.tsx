@@ -42,11 +42,12 @@ const commonFontStyles = css`
 
 const StyledText = styled.p`
   ${commonFontStyles}
-  line-height: 3.5;
   margin-bottom: 32px;
+  line-height: 3.5;
   @media (max-width: 320px) {
     ${({ theme }) => css`
       ${theme.typography.content2}
+      line-height: 3.5;
     `}
   }
 `;
