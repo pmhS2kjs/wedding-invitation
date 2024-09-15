@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from '@emotion/styled';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import { Pagination } from 'swiper/modules';
 import { css } from '@emotion/react';
 import ImageWithSkeleton from '@src/ImageWithSkeleton';
