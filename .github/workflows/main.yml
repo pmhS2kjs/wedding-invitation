@@ -1,0 +1,45 @@
+name: Deploy Invitation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          npm i -g pnpm
+          pnpm install --no-frozen-lockfile
+
+      - name: Set Git user
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+
+      - name: Set Environment Variables
+        run: |
+          cat << EOF > .env
+          VITE_KAKAO_MAP_API_KEY="${{ secrets.VITE_KAKAO_MAP_API_KEY }}"
+          VITE_GROOM_ACCOUNT="${{ secrets.VITE_GROOM_ACCOUNT }}"
+          VITE_GROOM_FATHER_ACCOUNT="${{ secrets.VITE_GROOM_FATHER_ACCOUNT }}"
+          VITE_BRIDE_ACCOUNT="${{ secrets.VITE_BRIDE_ACCOUNT }}"
+          VITE_BRIDE_FATHER_ACCOUNT="${{ secrets.VITE_BRIDE_FATHER_ACCOUNT }}"
+          VITE_BRIDE_MATHER_ACCOUNT="${{ secrets.VITE_BRIDE_MATHER_ACCOUNT }}"
+          EOF
+
+      - name: Configure Git for GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
+          git config --global --add safe.directory /home/runner/work/${{ github.repository }}
+
+      - name: Deploy to GitHub Pages
+        run: |
+          pnpm run deploy
