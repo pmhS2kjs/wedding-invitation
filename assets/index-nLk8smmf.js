@@ -235,11 +235,12 @@ Error generating stack: `+l.message+`
     'Apple SD Gothic Neo', -apple-system, 'Segoe UI', 'Oxygen';
 `,jg=F.p`
   ${Af}
-  line-height: 3.5;
   margin-bottom: 32px;
+  line-height: 3.5;
   @media (max-width: 320px) {
     ${({theme:e})=>V`
       ${e.typography.content2}
+      line-height: 3.5;
     `}
   }
 `,Bg=F.div`
