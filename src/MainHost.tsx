@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import InnerLayout from '@src/InnerLayout';
-import Img25 from './assets/imgs/img25.jpg';
-import Img26 from './assets/imgs/img26.jpg';
-import Img27 from './assets/imgs/img27.jpg';
-import Img28 from './assets/imgs/img28.jpg';
+import Img20 from './assets/imgs/img20.jpg';
+import Img21 from './assets/imgs/img21.jpg';
+import Img22 from './assets/imgs/img22.jpg';
+import Img23 from './assets/imgs/img23.jpg';
 import { css } from '@emotion/react';
 import Accordion from '@src/Accordion';
 
@@ -12,9 +12,9 @@ const MainHost = () => {
     <>
       <InnerLayout layout="full" className="line">
         <StyledImgWrap>
-          <img src={Img25} alt="" />
-          <img src={Img26} alt="" />
-          <img src={Img27} alt="" />
+          <img src={Img20} alt="" />
+          <img src={Img21} alt="" />
+          <img src={Img22} alt="" />
         </StyledImgWrap>
         <StyledText>
           <h2>마음을 전하실 곳</h2>
@@ -27,7 +27,7 @@ const MainHost = () => {
         </StyledHostWrap>
       </InnerLayout>
       <StyledImg>
-        <img src={Img28} alt="" />
+        <img src={Img23} alt="" />
       </StyledImg>
     </>
   );

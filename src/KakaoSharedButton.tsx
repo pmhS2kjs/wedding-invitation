@@ -14,7 +14,7 @@ const KakaoShareButton: React.FC = () => {
           title: '김준성❤박민혜의 결혼식에 초대합니다',
           description: '10월 26일(토), 낮 12시 30분',
           imageUrl:
-            'https://github.com/pmhS2kjs/wedding-invitation/blob/main/src/assets/imgs/img22.jpg?raw=true', // 이미지 URL
+            'https://github.com/pmhS2kjs/wedding-invitation/blob/main/src/assets/imgs/img17.jpg?raw=true', // 이미지 URL
           link: {
             mobileWebUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
             webUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
