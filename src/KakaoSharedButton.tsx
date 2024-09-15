@@ -14,18 +14,18 @@ const KakaoShareButton: React.FC = () => {
           title: '김준성❤박민혜의 결혼식에 초대합니다',
           description: '10월 26일(토), 낮 12시 30분',
           imageUrl:
-            'https://github.com/pmhS2kjs/invitation/blob/main/src/assets/imgs/img23.jpg?raw=true', // 이미지 URL
+            'https://github.com/pmhS2kjs/wedding-invitation/blob/main/src/assets/imgs/img23.jpg?raw=true', // 이미지 URL
           link: {
-            mobileWebUrl: 'https://pmhs2kjs.github.io/invitation',
-            webUrl: 'https://pmhs2kjs.github.io/invitation',
+            mobileWebUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
+            webUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
           },
         },
         buttons: [
           {
             title: '모바일 청첩장 보러가기',
             link: {
-              mobileWebUrl: 'https://pmhs2kjs.github.io/invitation',
-              webUrl: 'https://pmhs2kjs.github.io/invitation',
+              mobileWebUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
+              webUrl: 'https://pmhs2kjs.github.io/wedding-invitation',
             },
           },
         ],
@@ -35,7 +35,7 @@ const KakaoShareButton: React.FC = () => {
     }
   };
 
-  const linkToCopy = 'https://pmhs2kjs.github.io/invitation';
+  const linkToCopy = 'https://pmhs2kjs.github.io/wedding-invitation';
 
   const copyToClipboard = async () => {
     try {

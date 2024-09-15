@@ -5,7 +5,7 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/invitation/',
+  base: '/wedding-invitation/',
   plugins: [
     react({
       jsxImportSource: '@emotion/react',

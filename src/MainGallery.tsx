@@ -26,7 +26,7 @@ const MainGallery = () => {
             <SwiperSlide key={index}>
               <StyledImg>
                 <ImageWithSkeleton
-                  src={`https://github.com/pmhS2kjs/invitation/blob/main/src/assets/imgs/img${
+                  src={`https://github.com/pmhS2kjs/wedding-invitation/blob/main/src/assets/imgs/img${
                     index + 3
                   }.jpg?raw=true`}
                   alt={`Image ${index + 3}`}
