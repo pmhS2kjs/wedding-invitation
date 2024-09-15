@@ -22,7 +22,7 @@ const MainGallery = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {Array.from({ length: 23 }).map((_, index) => (
+          {Array.from({ length: 22 }).map((_, index) => (
             <SwiperSlide key={index}>
               <StyledImg>
                 <ImageWithSkeleton

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import mainImg from './assets/imgs/img8.jpg';
+import mainImg from './assets/imgs/img1.jpg';
 import { css } from '@emotion/react';
 import line from './assets/line.png';
 import ImageWithSkeleton from '@src/ImageWithSkeleton';
